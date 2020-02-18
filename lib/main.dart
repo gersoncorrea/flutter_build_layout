@@ -23,9 +23,21 @@ class MyApp extends StatelessWidget {
                       fontWeight: FontWeight.bold
                     ),
                     ),
+                ),
+                Text(
+                  'Manaus, Amazonas',
+                  style: TextStyle(
+                    color: Colors.grey[500]
+                  )
                 )
               ],
-            ))
+            )
+            ),
+            Icon(
+              Icons.star,
+              color: Colors.red[500],
+            ),
+            Text('5')
         ],
       ),
     );
