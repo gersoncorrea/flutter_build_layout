@@ -77,6 +77,17 @@ Widget buttonSection = Container(
 );
 
 
+Widget descriptionSection = Container(
+  padding: const EdgeInsets.all(32),
+  child: Text(
+    'A Universidade Federal do Amazonas (UFAM) é uma instituição de ensino superior pública brasileira localizada no estado do Amazonas e uma das mais importantes do Brasil.'
+    'É amplamente considerada como a primeira instituição de ensino superior do país, fundada em 17 de janeiro de 1909.'
+    'Originou-se da extinta Escola Universitária Livre de Manáos, desmembrada a Faculdade de Direito, formando o embrião da atual UFAM.'
+    'Foi instalada em 15 de março de 1910 e denominada como Universidade de Manaus em 13 de julho de 1913.',
+    softWrap: true,
+  ),
+);
+
     return MaterialApp(
       title:'Flutter layout demo',
       home: Scaffold(
@@ -92,7 +103,8 @@ Widget buttonSection = Container(
               fit: BoxFit.cover,
             ),
             titleSection,
-            buttonSection
+            buttonSection,
+            descriptionSection
           ],
         ),
       ),
