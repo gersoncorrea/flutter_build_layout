@@ -7,6 +7,41 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
 
+    Widget titleSection = Container(
+      padding: const EdgeInsets.all(32),
+      child: Row(
+        children:[
+          Expanded(
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: <Widget>[
+                Container(
+                  padding: const EdgeInsets.only(bottom: 8),
+                  child: Text(
+                    'Universidade Federal do Amazonas',
+                    style: TextStyle(
+                      fontWeight: FontWeight.bold
+                    ),
+                    ),
+                ),
+                Text(
+                  'Manaus, Amazonas',
+                  style: TextStyle(
+                    color: Colors.grey[500]
+                  )
+                )
+              ],
+            )
+            ),
+            Icon(
+              Icons.star,
+              color: Colors.red[500],
+            ),
+            Text('5')
+        ],
+      ),
+    );
+
   
     return MaterialApp(
       title:'Flutter layout demo',
@@ -21,7 +56,8 @@ class MyApp extends StatelessWidget {
               width: 600,
               height: 240,
               fit: BoxFit.cover,
-            )
+            ),
+            titleSection
           ],
         ),
       ),
